@@ -8,13 +8,15 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 
 public class BookShopTest {
-
-    /**
-     * TODO : Put your test here
-     */
+	BookShop myBookShoop = new BookShop("My Book Shop");
+    
 
     @Test
-    public void myFirstTest(){
+    public void myTest(){
         assertTrue(false);
+    }
+    @Test
+    public void myFirstTest(){
+    	assertEquals(8*1,myBookShoop.cost(new int[]{1,0,0,0,0}));
     }
 }
